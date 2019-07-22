@@ -1,16 +1,20 @@
 <template>
 
   <div class="box-main">
-    <h1 class="title">¿Cuánto queda pa'l 18?</h1>
-    <animated-number
-    class="daysLeft"
-    :value="daysLeft"
-    :duration="2000"
-    :round="1"
-    />
-    <!-- <div class="daysLeft">{{ daysLeft }}</div> -->
-    <div class="days">días para el</div>
-    <div class="date">{{ date }}</div>
+    <div class="content">
+      <h1 class="title">¿Cuánto queda pa'l 18?</h1>
+      <animated-number
+      class="daysLeft"
+      :value="daysLeft"
+      :duration="3000"
+      :round="1"
+      />
+      <div class="days">
+        <span v-if="this.daysLeft === 0">días</span>
+        <span v-else>días para el</span>
+      </div>
+      <div class="date">{{ date }}</div>
+    </div>
   </div>
 
 </template>
@@ -24,7 +28,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      daysLeft: '290',
+      daysLeft: '0',
       date: '18 de Septiembre de 2019'
     }
   },
@@ -81,14 +85,17 @@ export default {
 <style lang="scss" scoped>
 
 .box-main {
-  padding: 1rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 85%;
-  height: 85%;
-  background-color: rgba(0, 0, 0, .8);
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, .7);
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -97,7 +104,9 @@ export default {
 
   .daysLeft {
     font-size: 10rem;
-    line-height: 1;
+    line-height: .6;
+    font-weight: bold;
+    letter-spacing: -.05em;
   }
 
   .days {
@@ -106,7 +115,7 @@ export default {
 
   .date {
     margin-top: 2rem;
-    font-size: 3em;
+    font-size: 2.5em;
   }
 }
 
