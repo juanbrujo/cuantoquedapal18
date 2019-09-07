@@ -6,7 +6,7 @@
       <animated-number
       class="daysLeft"
       :value="daysLeft"
-      :duration="3000"
+      :duration="1200"
       :round="1"
       />
       <div class="days">
