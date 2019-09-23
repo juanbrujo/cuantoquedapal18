@@ -39,7 +39,7 @@ export default {
     getDaysLeft: function () {
       const year = new Date().getFullYear()
       const month = 8 // september
-      const day = 19 // sum a day
+      const day = 18 // sum a day
 
       const months = [
         'Enero',
@@ -55,8 +55,6 @@ export default {
         'Noviembre',
         'Diciembre'
       ]
-
-      this.date = `${day} de ${months[month]} de ${year}`
 
       let eventDate = moment([year, month, day])
       const todaysDate = moment()
