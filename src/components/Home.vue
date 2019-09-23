@@ -29,7 +29,7 @@ export default {
   data () {
     return {
       daysLeft: '0',
-      date: '18 de Septiembre de 2019'
+      date: '18 de Septiembre de 2020'
     }
   },
   components: {
@@ -38,8 +38,8 @@ export default {
   methods: {
     getDaysLeft: function () {
       const year = new Date().getFullYear()
-      const month = 8 // Septiembre
-      const day = 18
+      const month = 8 // september
+      const day = 19 // sum a day
 
       const months = [
         'Enero',
