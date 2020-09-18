@@ -39,7 +39,7 @@ export default {
     getDaysLeft: function () {
       const year = new Date().getFullYear()
       const month = 8 // september
-      const day = 18 // sum a day
+      const day = 19 // sum a day
 
       const months = [
         'Enero',
