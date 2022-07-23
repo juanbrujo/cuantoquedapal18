@@ -29,7 +29,7 @@ export default {
   data () {
     return {
       daysLeft: '0',
-      date: '18 de Septiembre de 2020'
+      date: '18 de Septiembre de 2022'
     }
   },
   components: {
@@ -97,8 +97,6 @@ export default {
   color: #fff;
   text-align: center;
   border-radius: 6px;
-
-  .title {}
 
   .daysLeft {
     font-size: 10rem;
