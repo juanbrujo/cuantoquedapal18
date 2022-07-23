@@ -23,7 +23,7 @@ export default {
 
 body {
   font-family: 'Darker Grotesque', sans-serif;
-  background: #fff url(https://i.imgur.com/nQQMd12.jpg) center center no-repeat;
+  background: #fff url(https://i.imgur.com/74w2YOr.jpg) center center no-repeat;
   background-size: cover;
 }
 
