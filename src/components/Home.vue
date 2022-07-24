@@ -29,7 +29,7 @@ export default {
   data () {
     return {
       daysLeft: '0',
-      date: '18 de Septiembre de 2022'
+      date: `18 de Septiembre de ${new Date().getFullYear()}`
     }
   },
   components: {
